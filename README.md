@@ -1,0 +1,2 @@
+# spinproject
+some small project
