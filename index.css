@@ -1,0 +1,53 @@
+
+.cantaner{
+    height: 205px;
+    width: 300px;
+    background-color: rgb(243, 237, 156);
+    margin-left: 200px;
+    border-radius: 50px;
+}
+
+.loader{
+    width: 100px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px 75px 2px 2px;
+    margin-left: 60px;
+    justify-content: center; 
+    position: relative; 
+    animation: spin 0.5s linear infinite;
+}
+.loader::before{
+    content: " ";
+    width: 30px;
+    height: 62px;
+    border: 20px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    background-color: black;
+}
+.loader::after{
+    content: " ";
+    width: 30px;
+    height: 60px;
+    border: 20px solid white;
+    border-radius: 50%;
+    top: 50%;
+    right: -22px;
+    position: absolute;
+    background-color: white;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
